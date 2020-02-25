@@ -187,8 +187,8 @@ body a:hover
 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 109px;
-    width: 245px;
+    font-size: 60px;
+    width: 100%;
     word-break: break-all;
     line-height: 83px;
     margin-top: 10px;
@@ -237,7 +237,6 @@ body a:hover
     font-size: 180px;
     line-height: 100%;
     text-transform: uppercase;
-    margin-top: -75px;
     color: #221c5a;    
 }
 
@@ -312,8 +311,8 @@ h1.big-title
 
 .title-desc
 {
-    font-family: 'PT Serif', serif;
-    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
     line-height: 26px;
     max-width: 90vw; 
     margin: 40px auto;
@@ -328,8 +327,6 @@ h1.big-title
 }
 
 /* END HOME SECTION */
-
-
 
 /* SERVICE SECTION */
 
@@ -580,6 +577,13 @@ div.pp_default .pp_loaderIcon
 
 /* ABOUT SECTION */
 
+.about-extended {
+    display: block;
+    margin-top: 40px;
+    height: auto;
+    overflow: hidden;
+}
+
 #about
 {
     background-color: rgb(34, 28, 90); 
@@ -607,26 +611,43 @@ div.pp_default .pp_loaderIcon
 
 .member-content-holder 
 {
-    width: 330px;
-    padding: 90px 50px 50px 50px;
-    float: left;
+    width: 350px;
+    padding: 90px 30px;
+}
+
+.member-holder {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; */
+    height: 400px;
 }
 
 .member-image-holder 
 {
     width: 370px;
-    float: right;
+    height: auto;
+    background-color: red;
 }
+
 
 .member-image-holder img
 {
     width: 100% !important;
 }
 
+.rightMemberAlignItem {
+    float: right;
+}
+
+.leftMemberAlignItem {
+    float: left;
+}
+
 .member-name
 {
     line-height: 26px;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     padding: 0;
 }
@@ -634,15 +655,17 @@ div.pp_default .pp_loaderIcon
 .member-position
 {
     line-height: 16px;
-    font-size: 14px;
-    padding-bottom: 50px;
+    font-size: 18px;
+    margin-top: 10px;
     color: #ee87a4;
     letter-spacing: 4px;
 }
 
 .member-content
 {
+    margin-top: 10px;
     line-height: 26px;    
+    font-size: 18px;
 }
 
 .image-slider-wrapper.img .image-slider li img
@@ -1240,8 +1263,10 @@ footer
 
     .section-title-holder 
     {    
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
+        margin-left: -30px;
+        margin-right: -30px;
     }
 
     .section-num
@@ -1257,11 +1282,11 @@ footer
 
     .section-title-holder h2
     {
-        font-size: 80px;
-        width: 177px;        
+        font-size: 60px;
+        width: 220px;        
         line-height: 66px;
         margin-top: 25px;        
-        margin-left: 75px; 
+        margin-left: 50px; 
     }
 
     .section-content-holder.right 
@@ -1316,7 +1341,7 @@ footer
 
     .section-content-holder .content-title 
     {    
-        font-size: 140px;    
+        font-size: 80px;    
         margin-top: -56px;
     }
 
@@ -1368,7 +1393,24 @@ footer
     {
         right: 50%;
         right: calc(50% - 30px);    
-    }    
+    }   
+    .member-holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .leftMemberAlignItem {
+        float: none;
+    }
+
+    .rightMemberAlignItem {
+        float: none;
+    }
 
 }
 
