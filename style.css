@@ -187,16 +187,14 @@ body a:hover
 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     width: 100%;
     word-break: break-all;
     line-height: 83px;
     margin-top: 10px;
     color: white;
-    margin-left: 115px;
     text-transform: uppercase;
-    letter-spacing: -3px;
-    padding: 0;
+    letter-spacing: -2px;
 }
 
 .section-content-holder
