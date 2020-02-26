@@ -233,8 +233,10 @@ body a:hover
 {
     font-family: 'Montserrat';
     font-weight: 700;
+    width: 100%;
     text-align: center;
-    font-size: 180px;
+    text-align: center;
+    font-size: 78px;
     line-height: 100%;
     text-transform: uppercase;
     color: #221c5a;    
@@ -349,7 +351,18 @@ h1.big-title
 .service-holder 
 {
     display: inline-block;
-    width: 335px;
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.serviceLeftAlign {
+    float: left;
+}
+
+.serviceRightAlign {
+    float: right;
 }
 
 .service-holder img 
@@ -370,8 +383,20 @@ h1.big-title
 .service-title 
 {
     font-family: 'Montserrat', sans-serif; 
-    font-size: 24px;
+    font-size: 26px;
     padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+
+.how-it-works-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 0.1px solid #221C5A ;
 }
 
 /* END SERVICE SECTION */
@@ -580,8 +605,12 @@ div.pp_default .pp_loaderIcon
 .about-extended {
     display: block;
     margin-top: 40px;
+    width: 100%;
     height: auto;
-    overflow: hidden;
+}
+
+.about-extended-container{
+    padding: 10px;
 }
 
 #about
@@ -690,13 +719,20 @@ div.pp_default .pp_loaderIcon
 
 .blog-item-holder
 {    
-    padding: 35px 0;
+    padding: 35px 20px;
     border-bottom: 2px solid #f4f4f4;
 }
 
 .blog-item-holder:last-of-type 
 {
     border: none;
+}
+
+.num-and-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .blog-item-holder .num 
@@ -711,7 +747,16 @@ div.pp_default .pp_loaderIcon
 .blog-item-holder .info 
 {
     display: inline-block;
-    width: 235px;
+    width: 0px;
+    flex: 1;
+    text-align: start;
+}
+
+.how-it-works-sub-heading{ 
+    color: #ee87a4;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
 }
 
 .blog-item-holder .info .cat-links a 
@@ -724,11 +769,11 @@ div.pp_default .pp_loaderIcon
 
 .blog-item-holder .entry-title 
 {
-    display: inline-block;
-    width: 325px;
-    padding: 0;
-    vertical-align: top;
-    line-height: 0;
+    display: block;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
 }
 
 .blog-holder .entry-title a
