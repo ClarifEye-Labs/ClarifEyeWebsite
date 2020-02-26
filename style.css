@@ -367,7 +367,7 @@ h1.big-title
 {
     display: inline-block;
     width: 50%;
-    height: 300px;
+    height: 320px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -617,11 +617,11 @@ div.pp_default .pp_loaderIcon
 
 /* ABOUT SECTION */
 .about-part-1 {
-    height: 680px;
+    height: auto !important;
 }
 .about-extended {
     display: block;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
     height: auto;
 }
@@ -1618,10 +1618,6 @@ footer
         margin-top: 20px;
     }
 
-    .about-part-1 {
-        height: 480px;
-    }
-
     .how-it-works-item-container {
         padding-left: 20px;
     }
@@ -1694,9 +1690,11 @@ footer
     {
         display: block !important;
     }
-    .header-main-menu{
-        height: 200px;
+
+    .service-holder {
+        height: auto !important;
     }
+
 }
 
 @media screen and (max-width: 925px) {  
@@ -1706,9 +1704,14 @@ footer
         min-height: 0;
     }
 
+    .service-holder {
+        height: auto !important;
+    }
+
     .section
     {
         position: static !important;
+        top: 0px;
         z-index: 0 !important;
     }
 
@@ -1733,6 +1736,7 @@ footer
     .mob-menu
     {
         display: block;
+        height: 40px !important;
     }
 
     .mob-menu:hover
@@ -1799,8 +1803,24 @@ footer
     .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea, p.custom-field-class, #commentform #email, #commentform #author, #commentform #comment
     {
         width: 100% !important;
-    }        
+    }
+    
+    .member-holder {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 0px !important;
+        border-bottom: 0.5px solid rgba(0,0,0,0.3)
+    }
 
+    .member-content-holder {
+        margin-top: 0px !important;
+        padding: 10px 0px !important;
+    }
+
+    .service-holder {
+        height: auto !important;
+    }
+    
 }
 
 
@@ -1809,23 +1829,57 @@ footer
 
     .member-content-holder
     {
-        width: 90%;
+        width: 70%;
         float: none;
+        padding: 0px !important;
+        height: auto !important;
     }
 
     .member-image-holder
     {
-        width: 100%;
+        width: 380px;
+        height: 420px;
         float: none;
+        padding: 0px !important;
+        margin-bottom: 0px !important;
     }
 
     .image-slider-wrapper.team .image_slider_next
     {
         right: auto;
         left: 30px;
-    }    
+    }   
+    
+    .service-holder {
+        height: auto !important;
+    }
+    
 }
 
+@media screen and (max-width: 450px) { 
+    .member-content-holder
+    {
+        width: 80%;
+        float: none;
+        padding: 0px !important;
+        height: auto !important;
+    }
+
+    .member-image-holder
+    {
+        width: 240px;
+        height: 280px;
+    }
+
+    .service-title {
+        font-size: 28px;
+        width: 80%;
+        line-height: 2rem;
+    }
+
+    .about-part-
+
+}
 
 @media screen and (max-width: 350px) { 
 
