@@ -268,6 +268,23 @@ body a:hover
 /* END GENERAL SECTION */
 
 
+/* WHITEPAPER */
+.whitepaper{
+    height: 400px;
+    background-image: url(demo-images/video_img.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#whitepaper-image {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+}
+/* END OF WHITEPAPER */
+
 
 /* HOME SECTION */
 
@@ -863,9 +880,10 @@ a.video-popup-holder
     display: block;
 }
 
-a.video-popup-holder .thumb
+.thumb
 {
     width: 100%;
+    margin-top: 20px;
 }
 
 img.popup-play 
